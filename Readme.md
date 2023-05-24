@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nikita Kostevich](https://up.htmlacademy.ru/htmlcss/37/user/1966385).
-* Наставник: `Неизвестно`.
+* Наставник: [Алиса Пепел](https://htmlacademy.ru/profile/id615601).
 
 ---
 
