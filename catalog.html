@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="navigation-icon visually-hidden" href="index.html">
+          <img class="navigation-icon" src="/images/icons/logo.svg" alt="Иконка логотипа сдедоны" width="140"
+            height="70">
+        </a>
+        <ul class=navigation-text>
+          <li class="navigation-text__item">
+            <a href="index.html" class="navigation-text__link">Главная</a>
+          </li>
+          <li class="navigation-text__item">
+            <a href="#" class="navigation-rtext__link">О Седоне</a>
+          </li>
+          <li class="navigation-text__item">
+            <a href="catalog.html" class="navigation-text__link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-icons">
+          <li class="navigation-icons__items">
+            <a href="#" class="navigation-icons__link__search visually-hidden">Поиск</a>
+          </li>
+          <li class="navigation-icons__items visually-hidden">
+            <a class="navigation-icons__items__heart visually-hidden" href="#">Избранное</a>
+          </li>
+          <li class="navigation-icons__items__button">
+            <a class="navigation-icons__items__button" href="#">хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="catalog_filter">
+      <h1 class="filter-title">Гостиницы Седоны</h1>
+      <ol class="filter_road">
+        <li class="filter_road__link">
+          <a href="index.html" class="filter_road__link__home">
+            <span class="filter_road__icon__home visually-hidden">Домой</span>
+          </a>
+        </li>
+        <li class="filter_road__link">
+          <span class="filter_road__icon__vector visually-hidden">Стрелка</span>
+        </li>
+        <li class="filter_road__link">
+          <a href="#" class="filter_road__link__hotels">
+            <span class="filter_road__icon__hotels visually-hidden">Гостиницы</span>
+          </a>
+        </li>
+      </ol>
+      <form class="filter_infrastructure" action="#" name="infrastructure">
+        <p class="infrastructure_head">Инфраструктура:</p>
+        <ul class="filter_infrastructure__checbox">
+          <li class="filter_swimmingpool">
+            <input name="swimmingpool" type="checkbox" checked>
+            <label for="swimmingpool">Бассейн</label>
+          </li>
+          <li class="filter_parking">
+            <input name="parking" type="checkbox" checked>
+            <label for="parking">Парковка</label>
+          </li>
+          <li class="filter_wifi">
+            <input name="wifi" type="checkbox">
+            <label for="wifi">Wi-Fi</label>
+          </li>
+        </ul>
+        <p class="huse_type">Тип Жилья:</p>
+        <ul class="house_type_list">
+          <li class="house_type_filter">
+            <input name="hotel" type="radio">
+            <label for="hotel">Гостиница</label>
+          </li>
+          <li class="house_type_filter">
+            <input name="motel" type="radio">
+            <label for="motel">Мотель</label>
+          </li>
+          <li class="house_type_filter">
+            <input name="appartaments" type="radio">
+            <label for="appartaments">Апартаменты</label>
+          </li>
+        </ul>
+        <p class="value">Стоимость, &#8381;:</p>
+      </form>
+    </section>
+
+    <footer>
+      <section class="follow">
+        <img class="bacghound-image__follow" src="/images/subscribe.jpg" alt="фотновое размытое изображение гор"
+          width="1200" height="415">
+        <h2 class="follow__text">подпишитесь на рассылку</h2>
+        <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
+        <form class="email" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="follow__email">
+            <label class="follow_email visually-hidden" for="email">Ваш e-mail</label>
+            <input type="email" placeholder="Ваш e-mail">
+          </p>
+          <button class="button__follow" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__link__vk">
+            <a href="https://vk.com/htmlacademy" class="social_link__vk__vector ">
+              <span class="social__link__vk__text visually-hidden">Мы Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__link__tg">
+            <a href="" class="social__link__tg__text">
+              <a href="https://t.me/htmlacademy" class="social_link__tg__vector ">
+                <span class="social__link__tg__text visually-hidden">Мы в Телеграм</span>
+              </a>
+          </li>
+          <li class="social__link__yotube">
+            <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector ">
+              <span class="social__link__youtube__text visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+        </ul>
+        <address class="footer__contacts">
+          <a href="tel:+78128121212">+7 (812)-12-12 </a>
+        </address>
+        <div class="htmlacademy-link">
+          <a href="https://htmlacademy.ru/" class="footer-htmlacademy-link">
+            <span class="footer__HTML-academy visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+</html>
