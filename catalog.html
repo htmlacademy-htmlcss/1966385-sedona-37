@@ -39,6 +39,8 @@
         </ul>
       </nav>
     </header>
+
+    <!--Фильтры каталога-->
     <section class="catalog_filter">
       <h1 class="filter-title">Гостиницы Седоны</h1>
       <ol class="filter_road">
@@ -60,41 +62,153 @@
         <p class="infrastructure_head">Инфраструктура:</p>
         <ul class="filter_infrastructure__checbox">
           <li class="filter_swimmingpool">
-            <input name="swimmingpool" type="checkbox" checked>
+            <input id="swimmingpool" type="checkbox" checked>
             <label for="swimmingpool">Бассейн</label>
           </li>
           <li class="filter_parking">
-            <input name="parking" type="checkbox" checked>
+            <input id="parking" type="checkbox" checked>
             <label for="parking">Парковка</label>
           </li>
           <li class="filter_wifi">
-            <input name="wifi" type="checkbox">
+            <input id="wifi" type="checkbox">
             <label for="wifi">Wi-Fi</label>
           </li>
         </ul>
         <p class="huse_type">Тип Жилья:</p>
         <ul class="house_type_list">
           <li class="house_type_filter">
-            <input name="hotel" type="radio">
+            <input name="house_type" id="hotel" type="radio" checked>
             <label for="hotel">Гостиница</label>
           </li>
           <li class="house_type_filter">
-            <input name="motel" type="radio">
+            <input name="house_type" type="radio" id="motel">
             <label for="motel">Мотель</label>
           </li>
           <li class="house_type_filter">
-            <input name="appartaments" type="radio">
+            <input name="house_type" type="radio" id="appartaments">
             <label for="appartaments">Апартаменты</label>
           </li>
         </ul>
-        <p class="value">Стоимость, &#8381;:</p>
       </form>
     </section>
 
+    <!--Разобраться и спросить на созвоне-->
+    <section class="price">
+      <p class="price_text">Стоимость, &#8381;:</p>
+      <div class="price_slider">
+        <span class="price_slider_min visually-hidden">Мнинимальная стоимость</span>
+        <input type="number" class="price-slider__input__min" value="0">
+      </div>
+      <div class="price_slider">
+        <span class="price_slider_max visually-hidden">Максимальная стоимость</span>
+        <input type="number" class="price-slider__input__max" value="9000">
+      </div>
+      <div class="progress"></div>
+    </section>
+
+    <!--Отели-->
+    <section class="hotels">
+      <h2 class="hotel-results">Найдено гостиниц: 38</h2>
+      <select name="filter-category">
+        <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала долрогие</option>
+        <option value="hiht_rrating">Сначала с высоким рейтингом</option>
+        <option value="low_rrating">Сначала с низким рейтингом</option>
+      </select>
+      <button class="icons">
+        <span class="icons-items visually-hidden">Таблица</span>
+      </button>
+      <button class="icons">
+        <span class="icons-items visually-hidden">Полный экран </span>
+      </button>
+      <button class="icons">
+        <span class="icons-items visually-hidden">Список </span>
+      </button>
+      <div class="hotels-list">
+        <div class="hotel-cards">
+          <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-1.jpg" width="300" height="212"
+            alt="Отель с выходом из пещеры, на выходе которого видно звездное небо">
+          <h3 class="hotel-card">Amara Resort & Spa</h3>
+          <span class="hotel">Гостиница</span>
+          <span class="value">От 4000 &#8381;</span>
+          <a class="hotel-card-follow" href="#">Подробнее</a>
+          <button class="hotell-card-follow">В Избранное</button>
+          <div class="rating-area">
+            <span class="rating-stars visually-hidden">Четыре звезды</span>
+          </div>
+          <p class="rating">Рейтинг: 8,5</p>
+        </div>
+        <div class="hotel-card">
+          <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-2.jpg" width="300" height="212"
+            alt="Вид на скалу, изнутри которой исходит радуга">
+          <h3 class="hotel-card-2">Villas at Poco Diablo</h3>
+          <span class="hotel">Гостиница</span>
+          <span class="value">От 5000 &#8381; </span>
+          <a class="hotel-card-follow" href="#">Подробнее</a>
+          <button class="hotell-follow">В Избранное</button>
+          <div class="rating-area">
+            <span class="rating-stars visually-hidden">Четыре звезды</span>
+          </div>
+          <p class="rating">Рейтинг: 9,2</p>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-3.jpg" width="300" height="212"
+          alt="Вид на разноуровневую скалу">
+        <h3 class="hotel-card">Desert Quail Inn</h3>
+        <span class="hotel">Гостиница</span>
+        <span class="value">От 2500 &#8381;</span>
+        <a class="hotel-card-follow" href="#">Подробнее</a>
+        <button class="hotell-follow">В Избранное</button>
+      </div>
+      <div class="rating-area">
+        <span class="rating-stars visually-hidden">Три звезды</span>
+      </div>
+      <p class="rating">Рейтинг: 6,9</p>
+      <div class="hotel-card">
+        <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-4.jpg" width="300" height="212"
+          alt="Вид на скалу на фоне звездного неба">
+        <h3 class="hotel-card">HreenTree Inn</h3>
+        <span class="hotel">Гостиница</span>
+        <span class="value">От 1500 &#8381;</span>
+        <a class="hotel-card-follow" href="#">Подробнее</a>
+        <button class="hotell-follow">В Избранное</button>
+        <div class="rating-area">
+          <span class="rating-stars visually-hidden">Две звезды</span>
+        </div>
+        <p class="rating">Рейтинг: 5,0</p>
+      </div>
+    </section>
+
+    <!--Пагинация-->
+    <div class="pagination">
+      <ul class="pagination-list">
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <span>
+            <a href="#">...</a>
+          </span>
+        </li>
+        <li>
+          <a href="#">10</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Footer-->
     <footer>
       <section class="follow">
-        <img class="bacghound-image__follow" src="/images/subscribe.jpg" alt="фотновое размытое изображение гор"
-          width="1200" height="415">
         <h2 class="follow__text">подпишитесь на рассылку</h2>
         <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
         <form class="email" action="https://echo.htmlacademy.ru/" method="post">
