@@ -16,10 +16,10 @@
         </a>
         <ul class=navigation-text>
           <li class="navigation-text__item">
-            <a href="#" class="navigation-text__link">Главная</a>
+            <a href="index.html" class="navigation-text__link">Главная</a>
           </li>
           <li class="navigation-text__item">
-            <a href="#" class="navigation-rtext__link">О Седоне</a>
+            <a href="#" class="navigation-text__link">О Седоне</a>
           </li>
           <li class="navigation-text__item">
             <a href="catalog.html" class="navigation-text__link">Гостиницы</a>
@@ -27,30 +27,34 @@
         </ul>
         <ul class="navigation-icons">
           <li class="navigation-icons__items">
-            <a href="#" class="navigation-icons__link__search visually-hidden">Поиск</a>
+            <a href="#" class="navigation-icons__link__search">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-icons__items visually-hidden">
-            <a class="navigation-icons__items__heart visually-hidden" href="#">Избранное</a>
+            <a class="navigation-icons__items__heart" href="#">
+              <span class="visually-hidden">Избранное </span>
+            </a>
           </li>
-          <li class="navigation-icons__items__button">
+          <li class="navigation-icons__items">
             <a class="navigation-icons__items__button" href="#">хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
-      <img class="min-index-welcome" src="/images/welcome.png" alt="добро пожаловать в седону">
-      <h1 class="main-index__text">Седона - небольшой городок в аризоне, заслуживающий большего</h1>
-      <p class="main-index__description">Рассмотрим причины, по которым Седона курче, чем Гранд-Каньон!</p>
+      <img class="main-index-welcome" src="/images/welcome.png" alt="добро пожаловать в седону">
       <section class="advantages">
+        <h1 class="main-index__text">Седона - небольшой городок в аризоне, заслуживающий большего</h1>
+        <p class="main-index__description">Рассмотрим причины, по которым Седона курче, чем Гранд-Каньон!</p>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advatages_list">
-          <div class="advantages_item_photo">
-            <li class="advantages_item">
-              <h2 class="advatages_item__text">Настоящий городок</h2>
-              <p class="advantages_item__description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            </li>
-          </div>
+          <li class="advantages_item advantages_item_photo">
+            <h2 class="advatages_item__text">Настоящий городок</h2>
+            <p class="advantages_item__description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <img src="/images/photo-1-header-block.jpg" alt="вид на отель с развивающимися флагами" width="800"
+              height="385">
+          </li>
           <li class="advantages_item">
             <h2 class="advatages_item__text">Небольшая площадь</h2>
             <p class="advantages_item__description">Все достопримечательности находятся очень близко</p>
@@ -63,12 +67,11 @@
             <h2 class="advatages_item__text">мало туристов</h2>
             <p class="advantages_item__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <div class="advantages_item_photo">
-            <li class="advantages_item">
-              <h2 class="advatages_item__text">там есть мость дьявола</h2>
-              <p class="advantages_item__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
-          </div>
+          <li class="advantages_item advantages_item_photo">
+            <img src="/images/photo-2.jpg" alt="вид на мост дьявола" width="800" height="385">
+            <h2 class="advatages_item__text">там есть мость дьявола</h2>
+            <p class="advantages_item__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
         </ul>
       </section>
       <section class="service">
@@ -98,16 +101,11 @@
     </main>
     <footer>
       <section class="follow">
-        <img class="bacghound-image__follow" src="/images/subscribe.jpg" alt="фотновое размытое изображение гор"
-          width="1200" height="415">
         <h2 class="follow__text">подпишитесь на рассылку</h2>
         <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
-        <form class="email" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="follow__email">
-            <label class="follow_email visually-hidden" for="email">Ваш e-mail</label>
-            <input type="email" placeholder="Ваш e-mail">
-          </p>
-          <button class="button__follow" type="submit">Подписаться</button>
+        <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
+          <input type="email" name="email" placeholder="Ваш e-mail" required>
+          <button type="submit">Подписаться</button>
         </form>
       </section>
       <section class="social">
@@ -132,11 +130,9 @@
         <address class="footer__contacts">
           <a href="tel:+78128121212">+7 (812)-12-12 </a>
         </address>
-        <div class="htmlacademy-link">
-          <a href="https://htmlacademy.ru/" class="footer-htmlacademy-link">
-            <span class="footer__HTML-academy visually-hidden">HTML Academy</span>
-          </a>
-        </div>
+        <a href="https://htmlacademy.ru/" class="footer-htmlacademy-link">
+          <span class="footer__HTML-academy visually-hidden">HTML Academy</span>
+        </a>
       </section>
     </footer>
   </body>
