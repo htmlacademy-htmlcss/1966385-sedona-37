@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fonts/ptsans-700.woff2">
+    <link rel="stylesheet" href="fonts/ptsans-400.woff2">
   </head>
 
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-icon visually-hidden" href="index.html">
-          <img class="navigation-icon" src="/images/icons/logo.svg" alt="Иконка логотипа сдедоны" width="140"
-            height="70">
+        <a class="navigation-icon" href="index.html">
+          <img class="navigation-icon" src="images/icons/logo.svg" alt="Иконка логотипа седоны" width="140" height="70">
         </a>
         <ul class=navigation-text>
           <li class="navigation-text__item">
@@ -31,9 +32,9 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-icons__items visually-hidden">
+          <li class="navigation-icons__items">
             <a class="navigation-icons__items__heart" href="#">
-              <span class="visually-hidden">Избранное </span>
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-icons__items">
@@ -43,46 +44,48 @@
       </nav>
     </header>
     <main class="main-index">
-      <img class="main-index-welcome" src="/images/welcome.png" alt="добро пожаловать в седону">
+      <img class="main-index-welcome" src="images/welcome.svg" alt="добро пожаловать в седону" width="458" height="352">
       <section class="advantages">
-        <h1 class="main-index__text">Седона - небольшой городок в аризоне, заслуживающий большего</h1>
-        <p class="main-index__description">Рассмотрим причины, по которым Седона курче, чем Гранд-Каньон!</p>
+        <h1 class="advantages__text">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+        <p class="advantages__description">Рассмотрим причины, по которым Седона курче, чем Гранд-Каньон!</p>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advatages_list">
           <li class="advantages_item advantages_item_photo">
-            <h2 class="advatages_item__text">Настоящий городок</h2>
-            <p class="advantages_item__description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="/images/photo-1-header-block.jpg" alt="вид на отель с развивающимися флагами" width="800"
+            <h2 class="advatages_item__text__photo">Настоящий городок</h2>
+            <p class="advantages_item__description advantages_item__description__photo">Седона - не аттракцион для
+              туристов, там течет своя жизнь</p>
+            <img src="images/photo-1-header-block.jpg" alt="вид на отель с развивающимися флагами" width="800"
               height="385">
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item advantages_item__square">
             <h2 class="advatages_item__text">Небольшая площадь</h2>
             <p class="advantages_item__description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item advantages_item__road">
             <h2 class="advatages_item__text">красивая дорога</h2>
             <p class="advantages_item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages_item">
+          <li class="advantages_item advantages_item__tourists">
             <h2 class="advatages_item__text">мало туристов</h2>
             <p class="advantages_item__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages_item advantages_item_photo">
-            <img src="/images/photo-2.jpg" alt="вид на мост дьявола" width="800" height="385">
-            <h2 class="advatages_item__text">там есть мость дьявола</h2>
-            <p class="advantages_item__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="images/photo-2-header-block.jpg" alt="вид на мост дьявола" width="800" height="385">
+            <h2 class="advatages_item__text__photo">там есть мость дьявола</h2>
+            <p class="advantages_item__description advantages_item__description__photo">Да, по нему можно пройти! Если
+              вы осмелитесь, разумеется</p>
           </li>
         </ul>
       </section>
       <section class="service">
         <h2 class="service_text">приезжайте в седону отдохнуть в комфорте и уюте</h2>
-        <p class="service_description">Опытный персонал и качественное обслуживание</p>
+        <p class="service_description">Опытный персонал и качественное обслуживание!</p>
         <ul class="service_list">
           <li class="sevice_item">
             <h3 class="service_item__text">Жилье</h3>
             <p class="serviuce_item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="sevice_item">
+          <li class="sevice_item service_item__food">
             <h3 class="service_item__text">Еда</h3>
             <p class="serviuce_item__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
@@ -99,7 +102,7 @@
         <a href="catalog.html" class="interest_link"> Поиск гостиницы в седоне </a>
       </div>
     </main>
-    <footer>
+    <footer class="page-footer">
       <section class="follow">
         <h2 class="follow__text">подпишитесь на рассылку</h2>
         <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
@@ -121,7 +124,7 @@
                 <span class="social__link__tg__text visually-hidden">Мы в Телеграм</span>
               </a>
           </li>
-          <li class="social__link__yotube">
+          <li class="social__link__youtube">
             <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector ">
               <span class="social__link__youtube__text visually-hidden">Мы в Ютубе</span>
             </a>

@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fonts/ptsans-700.woff2">
+    <link rel="stylesheet" href="fonts/ptsans-400.woff2">
   </head>
 
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a class="navigation-icon visually-hidden" href="index.html">
-          <img class="navigation-icon" src="/images/icons/logo.svg" alt="Иконка логотипа сдедоны" width="140"
-            height="70">
+        <a class="navigation-icon" href="index.html">
+          <img class="navigation-icon" src="images/icons/logo.svg" alt="Иконка логотипа седоны" width="140" height="70">
         </a>
         <ul class=navigation-text>
           <li class="navigation-text__item">
@@ -32,9 +34,9 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-icons__items visually-hidden">
+          <li class="navigation-icons__items">
             <a class="navigation-icons__items__heart" href="#">
-              <span class="visually-hidden">Избранное </span>
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-icons__items">
@@ -76,7 +78,7 @@
               <label for="wifi">Wi-Fi</label>
             </li>
           </ul>
-          <p class="huse_type">Тип Жилья:</p>
+          <p class="house_type">Тип Жилья:</p>
           <ul class="house_type_list">
             <li class="house_type_filter">
               <input name="house_type" id="hotel" type="radio" checked>
@@ -92,36 +94,36 @@
             </li>
           </ul>
         </form>
-      </section>
 
-      <!--Ползунок (слайдер) раздел 8!!!-->
-      <div class="form-container">
-        <h3 class="form-container-title">Стоимость, ₽:</h3>
-        <div class="form-container-inputs">
-          <div class="form-container-from">
-            <input type="number" name="price-from" id="price-from">
-            <span>от</span>
+        <!--Ползунок (слайдер) раздел 8!!!-->
+        <div class="form-container">
+          <h3 class="form-container-title">Стоимость, ₽:</h3>
+          <div class="form-container-inputs">
+            <div class="form-container-from">
+              <input type="number" name="price-from" id="price-from">
+              <span>от</span>
+            </div>
+            <div class="form-container-to">
+              <input type="number" name="price-to" id="price-to">
+              <span>до</span>
+            </div>
           </div>
-          <div class="form-container-to">
-            <input type="number" name="price-to" id="price-to">
-            <span>до</span>
+          <div class="slider">
+            <div class="slider-track">
+              <div class="slider-track-active"></div>
+              <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
+              <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
+            </div>
           </div>
         </div>
-        <div class="slider">
-          <div class="slider-track">
-            <div class="slider-track-active"></div>
-            <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
-            <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <!--Отели-->
       <section class="hotels">
         <h2 class="hotel-results">Найдено гостиниц: 38</h2>
         <select name="filter-category">
           <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала долрогие</option>
+          <option value="expensive">Сначала дорогие</option>
           <option value="hiht_rrating">Сначала с высоким рейтингом</option>
           <option value="low_rrating">Сначала с низким рейтингом</option>
         </select>
@@ -150,7 +152,7 @@
             <span class="hotel">Гостиница</span>
             <span class="value">От 4000 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
-            <button class="hotell-card-follow">В Избранное</button>
+            <button class="hotel-follow">В Избранное</button>
             <div class="rating-area">
               <span class="rating-stars visually-hidden">Четыре звезды</span>
             </div>
@@ -163,7 +165,7 @@
             <span class="hotel">Гостиница</span>
             <span class="value">От 5000 &#8381; </span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
-            <button class="hotell-follow">В Избранное</button>
+            <button class="hotel-follow hotel-follow__active">В Избранное</button>
             <div class="rating-area">
               <span class="rating-stars visually-hidden">Четыре звезды</span>
             </div>
@@ -176,7 +178,7 @@
             <span class="hotel">Гостиница</span>
             <span class="value">От 2500 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
-            <button class="hotell-follow">В Избранное</button>
+            <button class="hotel-follow">В Избранное</button>
           </li>
           <div class="rating-area">
             <span class="rating-stars visually-hidden">Три звезды</span>
@@ -189,7 +191,7 @@
             <span class="hotel">Гостиница</span>
             <span class="value">От 1500 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
-            <button class="hotell-follow">В Избранное</button>
+            <button class="hotel-follow">В Избранное</button>
             <div class="rating-area">
               <span class="rating-stars visually-hidden">Две звезды</span>
             </div>
@@ -201,7 +203,7 @@
       <!--Пагинация-->
       <div class="pagination">
         <ul class="pagination-list">
-          <li>
+          <li class="pagination-active">
             <a href="#">1</a>
           </li>
           <li>
@@ -213,7 +215,7 @@
           <li>
             <a href="#">4</a>
           </li>
-          <li>
+          <li class="pagination-hidden">
             <a href="#">...</a>
           </li>
           <li>
@@ -224,7 +226,7 @@
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="page-footer">
       <section class="follow">
         <h2 class="follow__text">подпишитесь на рассылку</h2>
         <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
@@ -246,7 +248,7 @@
                 <span class="social__link__tg__text visually-hidden">Мы в Телеграм</span>
               </a>
           </li>
-          <li class="social__link__yotube">
+          <li class="social__link__youtube">
             <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector ">
               <span class="social__link__youtube__text visually-hidden">Мы в Ютубе</span>
             </a>
