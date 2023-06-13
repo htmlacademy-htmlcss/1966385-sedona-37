@@ -85,7 +85,7 @@ ul {
 }
 
 .main-index__text {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -96,7 +96,7 @@ ul {
 }
 
 .main-index__description {
-  font-family: 'PT Sans' sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -153,7 +153,8 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-transform: none;}
+  text-transform: none;
+}
 
 .advantages_item__road {
   color: #000000;
@@ -230,7 +231,6 @@ ul {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -269,7 +269,7 @@ ul {
 /*bradcrumbs*/
 .breadcrumbs__link a {
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
