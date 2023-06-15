@@ -42,8 +42,6 @@ ul {
   line-height: 20px;
   color: #ffffff;
   background: #756157;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -107,9 +105,29 @@ ul {
 }
 
 .advantages {
-  color: #ffffff;
-  background-color: hsl(204, 48%, 67%);
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 36px;
+}
 
+.advantages__text {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #333333;
+}
+
+.advatages_item__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advatages_list {
@@ -164,6 +182,20 @@ ul {
 .service {
   color: #000000;
   background-color: #ffffff;
+  text-align: center;
+}
+
+.service_text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.service_description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
 
 .service_list {
@@ -180,12 +212,20 @@ ul {
   background-color: #ffffff;
 }
 
-.serviuce_item__description {
+.service_item__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.service_item__description {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
+  color: #333333;
 }
 
 .interest {
@@ -194,11 +234,17 @@ ul {
 }
 
 .interest_text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
 .interest_description {
-  text-transform: none;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
 
 .page-footer {
@@ -219,6 +265,13 @@ ul {
   text-align: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.follow__text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .follow__desscription {
@@ -414,8 +467,13 @@ ul {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.social__link__youtube {
-  background-image: url("../images/icons-footer/icon-youtube.svg");
+.social__link__tg__text {
+  background-image: url("../images/icons-footer/icon-tg.svg");
   background-repeat: no-repeat;
-  position: relative;
+}
+
+.icons-button-table {
+  background-image: url("../images/catalog/vectors/table.svg");
+  width: 16px;
+  height: 14px;
 }
