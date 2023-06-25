@@ -376,7 +376,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
   height: 415px;
 }
 
@@ -892,8 +891,7 @@ body {
 .page-footer-container-catalog {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  width: 684px;
+  justify-content: center;
   height: 215px;
   padding: 96px 258px 104px 258px;
 }
