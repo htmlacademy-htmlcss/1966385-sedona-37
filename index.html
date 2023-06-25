@@ -43,13 +43,11 @@
       </nav>
     </header>
     <main class="main-container main-index">
-      <div class="main-container">
+      <div class="main-container-index">
         <section class="main-index-welcome">
           <img class="main-index-welcome-image" src="images/welcome.svg" alt="добро пожаловать в седону" width="458"
             height="352">
         </section>
-
-
 
         <!--Преимущества-->
         <section class="advantages">
@@ -58,9 +56,11 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advatages_list">
             <li class="advantages_item-photo">
-              <h2 class="advatages_item__text">Настоящий городок</h2>
-              <p class="advantages_item__description advantages_item__description__photo">Седона - не аттракцион для
-                туристов, там течет своя жизнь</p>
+              <div class="advantages_photo_text">
+                <h2 class="advatages_item__text">Настоящий городок</h2>
+                <p class="advantages_item__description advantages_item__description__photo">Седона - не аттракцион для
+                  туристов, там течет своя жизнь</p>
+              </div>
               <img class="advantages_item_photo__city" src="images/photo-1-header-block.jpg"
                 alt="вид на отель с развивающимися флагами" width="800" height="385">
             </li>
@@ -79,26 +79,33 @@
             <li class="advantages_item-photo">
               <img class="advantages_item_photo__bridge" src="images/photo-2-header-block.jpg" alt="вид на мост дьявола"
                 width="800" height="385">
-              <h2 class="advatages_item__text">там есть мость дьявола</h2>
-              <p class="advantages_item__description advantages_item__description__photo">Да, по нему можно пройти!
-                Если вы осмелитесь, разумеется</p>
+              <div class="advantages_photo_text">
+                <h2 class="advatages_item__text">там есть мость дьявола</h2>
+                <p class="advantages_item__description advantages_item__description__photo">Да, по нему можно пройти!
+                  Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="service">
-          <h2 class="service_text">Приезжайте в седону отдохнуть в комфорте и уюте</h2>
-          <p class="service_description">Опытный персонал и качественное обслуживание!</p>
+          <div class="service_welcome">
+            <h2 class="service_text">Приезжайте в седону отдохнуть в комфорте и уюте</h2>
+            <p class="service_description">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="service_list">
             <li class="sevice_item">
+              <span class="service_item__house visually-hidden">Иконка жилья</span>
               <h3 class="service_item__text">Жилье</h3>
               <p class="service_item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="sevice_item service_item__food">
+              <span class="service_item__food visually-hidden">Иконка еды</span>
               <h3 class="service_item__text">Еда</h3>
               <p class="service_item__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="sevice_item">
+              <span class="service_item__souvenir visually-hidden">Иконка сувенира</span>
               <h3 class="service_item__text">Сувениры</h3>
               <p class="service_item__description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -116,12 +123,14 @@
 
     <footer class="page-footer">
       <section class="follow">
-        <h2 class="follow__text">подпишитесь на рассылку</h2>
-        <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
-        <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
-          <input type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="mailing-form-button" type="submit">Подписаться</button>
-        </form>
+        <div class="main-follow">
+          <h2 class="follow__text">подпишитесь на рассылку</h2>
+          <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
+          <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
+            <input type="email" name="email" placeholder="Ваш e-mail" required>
+            <button class="mailing-form-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
       <section class="social">
         <ul class="social__list">
