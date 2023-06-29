@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="navigation">
         <a class="navigation-icon" href="index.html">
-          <img class="navigation-icon" src="images/header-icons/logo.svg" alt="Иконка логотипа седоны" width="140"
+          <img class="navigation-icon-logo" src="images/header-icons/logo.svg" alt="Иконка логотипа седоны" width="140"
             height="70">
         </a>
         <ul class="navigation_list navigation-text">
@@ -51,8 +51,10 @@
 
         <!--Преимущества-->
         <section class="advantages">
-          <h1 class="advantages__text">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
-          <p class="advantages__description">Рассмотрим причины, по которым Седона курче, чем Гранд-Каньон!</p>
+          <div class="advantages_head">
+            <h1 class="advantages__text">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+            <p class="advantages__description">Рассмотрим причины, по которым Седона курче, чем Гранд-Каньон!</p>
+          </div>
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advatages_list">
             <li class="advantages_item-photo">
@@ -95,17 +97,14 @@
           </div>
           <ul class="service_list">
             <li class="sevice_item">
-              <span class="service_item__house visually-hidden">Иконка жилья</span>
               <h3 class="service_item__text">Жилье</h3>
-              <p class="service_item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="service_item__description">Рекомендуем пожить <br>в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="sevice_item service_item__food">
-              <span class="service_item__food visually-hidden">Иконка еды</span>
               <h3 class="service_item__text">Еда</h3>
               <p class="service_item__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="sevice_item">
-              <span class="service_item__souvenir visually-hidden">Иконка сувенира</span>
               <h3 class="service_item__text">Сувениры</h3>
               <p class="service_item__description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -114,8 +113,7 @@
         <section class="interest">
           <h2 class="interest_text">заинтересовались?</h2>
           <p class="interest_description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
-            гостиниц
-            в Седоне</p>
+            гостиниц в Седоне</p>
           <a href="catalog.html" class="interest_link"> Поиск гостиницы в седоне </a>
         </section>
       </div>
@@ -127,26 +125,26 @@
           <h2 class="follow__text">подпишитесь на рассылку</h2>
           <p class="follow__desscription">Только полезная информация и никакого спама, честное слово!</p>
           <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
-            <input type="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="mailing-form-line" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="mailing-form-button" type="submit">Подписаться</button>
           </form>
         </div>
       </section>
       <section class="social">
         <ul class="social__list">
-          <li class="social__link__vk">
+          <li class="social__link__vk social__item ">
             <a href="https://vk.com/htmlacademy" class="social_link__vk__vector">
               <span class="social__link__vk__text visually-hidden">Мы Вконтакте</span>
             </a>
           </li>
-          <li class="social__link__tg">
+          <li class="social__link__tg social__item">
             <a href="" class="social__link__tg__text">
-              <a href="https://t.me/htmlacademy" class="social_link__tg__vector ">
+              <a href="https://t.me/htmlacademy" class="social_link__tg__vector">
                 <span class="social__link__tg__text visually-hidden">Мы в Телеграм</span>
               </a>
           </li>
-          <li class="social__link__youtube">
-            <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector ">
+          <li class="social__link__youtube social__item ">
+            <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector">
               <span class="social__link__youtube__text visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
