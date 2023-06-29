@@ -101,25 +101,27 @@
 
         <!--Ползунок (слайдер) раздел 8!!!-->
         <div class="form-container">
-          <h3 class="form-container-title">Стоимость, ₽:</h3>
-          <div class="form-container-inputs">
-            <div class="form-container-from">
-              <input type="number" name="price-from" id="price-from">
-              <span>от</span>
-            </div>
-            <div class="form-container-to">
-              <input type="number" name="price-to" id="price-to">
-              <span>до</span>
+          <div class="form-container-value">
+            <h3 class="form-container-title">Стоимость, ₽:</h3>
+            <div class="form-container-inputs">
+              <div class="form-container-from">
+                <input class="price-from" type="number" name="price-from" id="price-from">
+                <span>от</span>
+              </div>
+              <div class="form-container-to">
+                <input class="price-to" type="number" name="price-to" id="price-to">
+                <span>до</span>
+              </div>
             </div>
           </div>
           <div class="slider">
             <div class="slider-track">
-              <div class="slider-track-active"></div>
-              <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
-              <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
+              <div class="slider-track-active">
+                <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
+                <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!--Отели-->
