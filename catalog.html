@@ -61,65 +61,64 @@
             </a>
           </li>
         </ol>
-        <form class="filter_infrastructure" action="#" name="infrastructure">
-          <div class="filter">
-            <div class="infra">
-              <p class="infrastructure_head">Инфраструктура:</p>
-              <ul class="filter_infrastructure__checbox">
-                <li class="filter_swimmingpool">
-                  <input id="swimmingpool" type="checkbox" checked>
-                  <label for="swimmingpool">Бассейн</label>
-                </li>
-                <li class="filter_parking">
-                  <input id="parking" type="checkbox" checked>
-                  <label for="parking">Парковка</label>
-                </li>
-                <li class="filter_wifi">
-                  <input id="wifi" type="checkbox">
-                  <label for="wifi">Wi-Fi</label>
-                </li>
-              </ul>
+        <div class="catalog_filter__form">
+          <form class="filter_infrastructure" action="#" name="infrastructure">
+            <div class="filter">
+              <div class="infra-left">
+                <p class="infrastructure_head">Инфраструктура:</p>
+                <ul class="filter_infrastructure__checbox">
+                  <li class="filter_swimmingpool">
+                    <input id="swimmingpool" type="checkbox" checked>
+                    <label for="swimmingpool">Бассейн</label>
+                  </li>
+                  <li class="filter_parking">
+                    <input id="parking" type="checkbox" checked>
+                    <label for="parking">Парковка</label>
+                  </li>
+                  <li class="filter_wifi">
+                    <input id="wifi" type="checkbox">
+                    <label for="wifi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="infra infra_right">
+                <p class="house_type">Тип Жилья:</p>
+                <ul class="house_type_list">
+                  <li class="house_type_filter">
+                    <input name="house_type" id="hotel" type="radio" checked>
+                    <label for="hotel">Гостиница</label>
+                  </li>
+                  <li class="house_type_filter">
+                    <input name="house_type" type="radio" id="motel">
+                    <label for="motel">Мотель</label>
+                  </li>
+                  <li class="house_type_filter">
+                    <input name="house_type" type="radio" id="appartaments">
+                    <label for="appartaments">Апартаменты</label>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="infra infra_right">
-              <p class="house_type">Тип Жилья:</p>
-              <ul class="house_type_list">
-                <li class="house_type_filter">
-                  <input name="house_type" id="hotel" type="radio" checked>
-                  <label for="hotel">Гостиница</label>
-                </li>
-                <li class="house_type_filter">
-                  <input name="house_type" type="radio" id="motel">
-                  <label for="motel">Мотель</label>
-                </li>
-                <li class="house_type_filter">
-                  <input name="house_type" type="radio" id="appartaments">
-                  <label for="appartaments">Апартаменты</label>
-                </li>
-              </ul>
-            </div>
-        </form>
+          </form>
 
-        <!--Ползунок (слайдер) раздел 8!!!-->
-        <div class="form-container">
-          <div class="form-container-value">
-            <h3 class="form-container-title">Стоимость, ₽:</h3>
-            <div class="form-container-inputs">
-              <div class="form-container-from">
-                <input class="price-from" type="number" name="price-from" id="price-from">
-                <span>от</span>
-              </div>
-              <div class="form-container-to">
-                <input class="price-to" type="number" name="price-to" id="price-to">
-                <span>до</span>
+          <!--Ползунок (слайдер) раздел 8!!!-->
+          <div class="form-container">
+            <div class="form-container-value">
+              <h3 class="form-container-title">Стоимость, ₽:</h3>
+              <div class="form-container-inputs">
+                <div class="form-container-from">
+                  <input class="price-from" type="number" name="price-from" id="price-from">
+                  <span>от</span>
+                </div>
+                <div class="form-container-to">
+                  <input class="price-to" type="number" name="price-to" id="price-to">
+                  <span>до</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slider">
-            <div class="slider-track">
-              <div class="slider-track-active">
-                <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
-                <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
-              </div>
+            <div class="slider">
+              <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
+              <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
             </div>
           </div>
       </section>
@@ -214,40 +213,43 @@
             <p class="rating-number">Рейтинг: 5,0</p>
           </li>
         </ul>
-      </section>
 
-      <!--Пагинация-->
-      <div class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-list_item pagination-active">
-            <a href="#">1</a>
-          </li>
-          <li class="pagination-list_item">
-            <a href="#">2</a>
-          </li>
-          <li class="pagination-list_item">
-            <a href="#">3</a>
-          </li>
-          <li class="pagination-list_item">
-            <a href="#">4</a>
-          </li>
-          <li class=" pagination-list_item pagination-hidden">
-            <a href="#">...</a>
-          </li>
-          <li class="pagination-list_item">
-            <a href="#">10</a>
-          </li>
-        </ul>
-      </div>
-      </div>
+
+        <!--Пагинация-->
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-list_item pagination-active">
+              <a href="#">1</a>
+            </li>
+            <li class="pagination-list_item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-list_item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-list_item">
+              <a href="#">4</a>
+            </li>
+            <li class=" pagination-list_item pagination-hidden">
+              <a href="#">...</a>
+            </li>
+            <li class="pagination-list_item">
+              <a href="#">10</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
     <footer class="page-footer-catalog">
       <div class="page-footer-container-catalog">
         <section class="follow-catalog">
-          <h2 class="follow__text-catalog">подпишитесь на рассылку</h2>
-          <p class="follow__desscription-catalog">Только полезная информация и никакого спама, честное слово!</p>
+          <div class="follow-catalog__text">
+            <h2 class="follow__text-catalog">подпишитесь на рассылку</h2>
+            <p class="follow__desscription-catalog">Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+          </div>
           <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
             <input class="mailing-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="mailing-form-button" type="submit">Подписаться</button>
@@ -257,19 +259,19 @@
         </section>
         <section class="social">
           <ul class="social__list">
-            <li class="social__link__vk">
+            <li class="social__link__vk social__item ">
               <a href="https://vk.com/htmlacademy" class="social_link__vk__vector">
                 <span class="social__link__vk__text visually-hidden">Мы Вконтакте</span>
               </a>
             </li>
-            <li class="social__link__tg">
+            <li class="social__link__tg social__item">
               <a href="" class="social__link__tg__text">
-                <a href="https://t.me/htmlacademy" class="social_link__tg__vector ">
+                <a href="https://t.me/htmlacademy" class="social_link__tg__vector">
                   <span class="social__link__tg__text visually-hidden">Мы в Телеграм</span>
                 </a>
             </li>
-            <li class="social__link__youtube">
-              <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector ">
+            <li class="social__link__youtube social__item ">
+              <a href="https://www.youtube.com/user/htmlacademy" class="social_link__youtube__vector">
                 <span class="social__link__youtube__text visually-hidden">Мы в Ютубе</span>
               </a>
             </li>
