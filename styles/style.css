@@ -1116,6 +1116,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  width: 475px;
 }
 
 .page-footer-container-catalog {
@@ -1131,6 +1132,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
+  color: #333333;
 }
 
 .mailing-form {
