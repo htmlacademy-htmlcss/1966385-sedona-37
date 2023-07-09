@@ -158,6 +158,23 @@ body {
   background-image: url("../images/header-icons/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.favorite_number {
+  position: absolute;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  color: #ffffff;
+  top: 11px;
+  right: 4px;
+  border-radius: 50%;
+  background: #7db54f;
+  padding: 5px;
 }
 
 .navigation-icons__link {
