@@ -75,7 +75,7 @@ body {
   line-height: 24px;
   align-items: center;
   justify-content: center;
-  max-height: 64px;
+  min-height: 64px;
 }
 
 .navigation-icon {
@@ -84,11 +84,12 @@ body {
   outline: none;
   margin-bottom: -6px;
   z-index: 1;
+  top: 0;
 }
 
 .navigation-icon:focus,
 .navigation-icon:hover {
-  outline: 2px dotted hsl(204, 48%, 67%);
+  opacity: 90%;
 }
 
 .navigation_list {
@@ -114,7 +115,7 @@ body {
 .navigation-text__link:focus,
 .navigation-text__link:hover {
   content: "";
-  outline: 2px dotted hsl(204, 48%, 67%);
+  opacity: 50%;
 }
 
 .navigation-text__link_active::before {
@@ -171,7 +172,7 @@ body {
 
 .navigation-icons__link:focus,
 .navigation-icons__link:hover {
-  outline: 2px dotted hsl(204, 48%, 67%);
+  opacity: 30%;
 }
 
 /*Main container */
@@ -318,6 +319,8 @@ body {
   align-items: center;
   color: #ffffff;
   background: hsl(204, 48%, 67%);
+  height: 385px;
+  min-height: 385px;
 }
 
 .advantages_photo_text {
@@ -537,13 +540,21 @@ body {
   margin: 0;
   min-width: 27px;
   min-height: 40px;
+  padding: 0 10px 0 10px;
 }
 
-.social_link .social__link__vk:hover,
-.social_link .social__link__vk:focus,
-.social_link:active {
-  stroke: hsl(204, 48%, 60%);
-  color: hsl(204, 48%, 60%);
+.social_link:hover path,
+.social_link:focus path {
+  fill: #68a2ca;
+}
+
+.social_link:focus-visible {
+  border: none;
+  outline: #3f5e72;
+}
+
+.social_link:active path {
+  fill: #68a2ca4d;
 }
 
 .follow {
@@ -627,7 +638,6 @@ body {
 }
 
 .mailing-form-line:hover {
-  border-radius: 4px;
   background: #e6e6e6;
 }
 
@@ -691,6 +701,15 @@ body {
   height: 33px;
 }
 
+.footer-htmlacademy-link:hover path,
+.footer-htmlacademy-link:focus path {
+  fill: #756157;
+}
+
+.footer-htmlacademy-link:active path {
+  fill: #7561574d;
+}
+
 .footer-htmlacademy-link:hover,
 .footer-htmlacademy-link:focus {
   fill: #68a2ca;
@@ -709,7 +728,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 142px;
+  min-width: 142px;
   min-height: 40px;
   margin: 0;
   padding: 0;
@@ -790,6 +809,11 @@ body {
   width: 12px;
   height: 12px;
   background-position: center;
+}
+
+.breadcrumbs__link__home:hover,
+.breadcrumbs__link__home:focus {
+  opacity: 0.5;
 }
 
 .breadcrumbs__link__hotels {
@@ -894,7 +918,7 @@ body {
 
 .filter-category:hover,
 .filter-category:focus {
-  border-color: #68A2CA;
+  border-color: rgb(104, 162, 202);
 }
 
 .form-container {
@@ -1030,6 +1054,16 @@ body {
   outline: none;
 }
 
+.icons-button:hover,
+.icons-button:active {
+  border: 2px solid #000000;
+}
+
+.icons-button:focus,
+.icons-button:focus-visible {
+  border: 2px solid #68a2ca;
+}
+
 .icons-button-current {
   border: 2px solid #000000;
 }
@@ -1067,7 +1101,7 @@ body {
 
 .slider-button-from:focus,
 .slider-button-from:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .slider-button-from:active {
@@ -1083,7 +1117,7 @@ body {
 .slider-button-to:hover,
 .slider-button-to:focus,
 .slider-button-to:focus-visible {
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
 }
 
 .slider-button-to:focus {
@@ -1127,6 +1161,12 @@ body {
 .hotel-card-link {
   text-decoration: none;
   grid-column: 1/-1;
+}
+
+.hotel-card-link:hover,
+.hotel-card-link:focus,
+.hotel-card-link:focus-visible {
+  opacity: 0.8;
 }
 
 .hotel-card h3 {
@@ -1220,7 +1260,7 @@ body {
 
 .hotel-follow__active:hover,
 .hotel-follow__active:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .rating-area-four {
@@ -1285,7 +1325,8 @@ body {
 }
 
 .pagination-list_item a:active {
-  color: #ffffff4d;
+  color: #68a2ca;
+  cursor: none;
 }
 
 .pagination-list_item a {
@@ -1299,6 +1340,7 @@ body {
 .pagination-active {
   background: hsl(0, 0%, 95%);
   border-radius: 4px;
+  cursor: none;
 }
 
 .pagination-active:hover,
@@ -1306,6 +1348,7 @@ body {
 .pagination-active:focus-visible {
   background: hsl(0, 0%, 95%);
   outline: none;
+  cursor: none;
 }
 
 .pagination-active a {
@@ -1432,7 +1475,6 @@ body {
   align-items: center;
   min-width: 27px;
   min-height: 40px;
-  padding: 0 10px 0 10px;
   text-align: center;
   outline: none;
 }
