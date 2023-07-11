@@ -14,13 +14,8 @@
   font-display: swap;
 }
 
-/**,
-*::before,
-*::after {
-  box-sizing: border-box;
-}*/
 
-.img {
+img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -202,9 +197,10 @@ body {
 }
 
 .main-index-welcome {
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/index-background.jpg"), url("./images/index_vector.svg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, bottom;
   text-align: center;
   color: #ffffff;
   background-color: rgba(131, 179, 211, 12);
@@ -294,7 +290,7 @@ body {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.30);
   display: block;
-  margin: 30px auto 30px auto;
+  margin: 29px auto 29px auto;
 }
 
 .advatages_item__text_title::after {
@@ -339,8 +335,6 @@ body {
   align-items: center;
   color: #ffffff;
   background: hsl(204, 48%, 67%);
-  height: 385px;
-  min-height: 385px;
 }
 
 .advantages_photo_text {
@@ -350,7 +344,6 @@ body {
   align-items: center;
   padding: 103px 85px;
   width: 230px;
-  min-height: 179px;
   background-color: hsl(204, 48%, 67%);
 }
 
@@ -1100,6 +1093,10 @@ body {
   margin: 0;
 }
 
+.price-from-number[type="number"] {
+  appearance: textfield;
+}
+
 .price-from-number span {
   font-size: 18px;
   font-weight: 400;
@@ -1171,6 +1168,10 @@ body {
 .price-to-number::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.price-from-number[type="number"] {
+  appearance: textfield;
 }
 
 .slider {
@@ -1405,6 +1406,10 @@ body {
   padding: 0;
   width: 300px;
   text-decoration: none;
+}
+
+.hotel-card-title:hover {
+  opacity: 0.5;
 }
 
 .value {
@@ -1670,7 +1675,6 @@ body {
 /* Buttons */
 .navigation-icons__items__button {
   display: inline-block;
-  font-family: inherit;
   padding: 8px 50px;
   font-weight: 700;
   font-size: 16px;
@@ -1682,6 +1686,7 @@ body {
   text-decoration: none;
   margin-left: 20px;
   outline: none;
+  font-family: "PT Sans", sans-serif;
 }
 
 .navigation-icons__items__button:hover,
@@ -1748,8 +1753,8 @@ body {
   position: absolute;
   width: 52px;
   height: 52px;
-  top: 0;
-  right: 0;
+  top: 64px;
+  right: 52px;
   padding: 0;
   background-image: url("../images/modal/cross.svg");
   background-repeat: no-repeat;
@@ -1759,6 +1764,18 @@ body {
   border-radius: 50%;
   background-color: #f2f2f2;
 }
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible,
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+  background-color: #E6E6E6;
+}
+
+
 
 .modal-title {
   margin: 0 0 64px 0;
