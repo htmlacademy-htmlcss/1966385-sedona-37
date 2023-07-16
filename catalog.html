@@ -63,25 +63,25 @@
             </a>
           </li>
         </ol>
-        <form class="filter_infrastructure" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="filter_infrastructure" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter">
             <legend class="infrastructure_head">Инфраструктура:</legend>
             <ul class="filter_infrastructure__checbox">
               <li class="filter-infrastructure-item">
                 <label class="control">
-                  <input class="checkbox visually-hidden" type="checkbox" name="swimming-pool" checked>
+                  <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
               </li>
               <li class="filter-infrastructure-item">
                 <label class="control">
-                  <input class="checkbox visually-hidden" type="checkbox" name="parking">
+                  <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
               </li>
               <li class="filter-infrastructure-item">
                 <label class="control">
-                  <input class="checkbox visually-hidden" type="checkbox" name="Wi-Fi">
+                  <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
               </li>
@@ -92,23 +92,23 @@
             <ul class="house_type_list">
               <li class="house_type_filter">
                 <label class="control">
-                  <input class="control-item visually-hidden" type="radio" name="hotel" checked>
+                  <input class="control-item visually-hidden" type="radio" name="house-input" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="house_type_filter">
                 <label class="control">
-                  <input class="control-item visually-hidden" name="motel" type="radio">
+                  <input class="control-item visually-hidden" name="house-input" type="radio">
                   <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="house_type_filter">
                 <label class="control">
-                  <input class="control-item visually-hidden" name="apportaments" type="radio">
+                  <input class="control-item visually-hidden" name="house-input" type="radio">
                   <span class="control-mark"></span>
-                  <span class="control-label">Аппортаменты</span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -126,7 +126,7 @@
                   </label>
                 </div>
                 <div class="form-container-to">
-                  <label class="`price-to">
+                  <label class="price-to">
                     <input class="price-to-number" type="number" name="price-to" id="price-to" value="9000">
                     <span>до</span>
                   </label>
@@ -149,8 +149,8 @@
             </div>
           </fieldset>
           <div class="slider">
-            <button class="slider-button slider-button-from" type="button" aria-label="цена от">Применить</button>
-            <button class="slider-button slider-button-to" type="button" aria-label="цена от">сбросить</button>
+            <button class="slider-button slider-button-from" type="submit" aria-label="цена от">Применить</button>
+            <button class="slider-button slider-button-to" type="reset" aria-label="цена от">сбросить</button>
           </div>
         </form>
       </section>
@@ -270,7 +270,7 @@
               <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-4.jpg" width="300" height="212"
                 alt="Вид на скалу на фоне звездного неба">
             </a>
-            <a class="hotel-card-title" href="#">HreenTree Inn</a>
+            <a class="hotel-card-title" href="#">GreenTree Inn</a>
             <span class="hotel-name">Гостиница</span>
             <span class="value">От 1500 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
