@@ -208,8 +208,6 @@ body {
   color: #ffffff;
   background-color: rgba(131, 179, 211, 12);
   padding: 51px 371px 82px 371px;
-  border: 1px solid #000;
-  border-bottom: none;
 }
 
 .main-index-welcome::before {
@@ -787,19 +785,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1060px;
-  padding: 35px 70px 63px;
+  padding: 35px 70px 73px;
 }
 
 .filter-title {
   width: 494px;
   min-height: 88px;
   max-height: 88px;
-  margin: 0 0 8px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  text-shadow: 1px 1px 1px #000;
+  margin: 0 0 -2px 0;
 }
 
 .breadcrumbs {
@@ -1039,6 +1035,8 @@ input[type="radio"]:checked ~ .control-mark::before {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  background-color: #FFFFFF;
+  -moz-appearance: none;
 }
 
 .filter-category:hover,
@@ -1101,6 +1099,7 @@ input[type="radio"]:checked ~ .control-mark::before {
   padding: 12px 20px;
   border: none;
   min-height: 24px;
+  -moz-appearance: textfield;
 }
 
 .price-from-number:hover,
@@ -1159,20 +1158,10 @@ input[type="radio"]:checked ~ .control-mark::before {
   width: 287px;
 }
 
-.range-scale:hover {
-  background:#3f5e72;
-  cursor: pointer;
-}
-
 .range-bar {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
-}
-
-.range-bar:hover {
-  background-color: rgb(130, 179, 211);
-  cursor: pointer;
 }
 
 .range-toggle {
