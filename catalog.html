@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header data-test="header" class="main-header">
       <nav class="navigation">
         <a class="navigation-icon" href="index.html">
           <img class="navigation-icon-logo" src="images/header-icons/logo.svg" alt="Иконка логотипа седоны." width="140"
@@ -19,23 +19,23 @@
         </a>
         <ul class="navigation_list navigation-text">
           <li class="navigation-text__item">
-            <a href="index.html" class="navigation-text__link ">Главная</a>
+            <a href="index.html" class="navigation-text__link navigation-text__link_active">Главная</a>
           </li>
           <li class="navigation-text__item">
             <a href="#" class="navigation-text__link">О Седоне</a>
           </li>
           <li class="navigation-text__item">
-            <a href="catalog.html" class="navigation-text__link navigation-text__link_active_catalog">Гостиницы</a>
+            <a href="catalog.html" class="navigation-text__link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation_list navigation_icons">
-          <li class="navigation-icons__items">
-            <a href="#" class="navigation-icons__link">
+          <li class="navigation-icons__items navigation_icons_search">
+            <a href="#" class="navigation-icons__link ">
               <span class=" visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-icons__items">
-            <a class="navigation-icons__link navigation_icons_heart" href="#">
+          <li class="navigation-icons__items navigation_icons_heart">
+            <a class="navigation-icons__link " href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favorite_number">12</span>
             </a>
@@ -195,7 +195,9 @@
               <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-1.jpg" width="300" height="212"
                 alt="Отель с выходом из пещеры, на выходе которого видно звездное небо.">
             </a>
-            <a class="hotel-card-title" href="#">Amara Resort & Spa</a>
+            <h3 class="hotel-card-title">
+              <a class="hotel-card-title-link" href="#">Amara Resort & Spa</a>
+            </h3>
             <span class="hotel-name">Гостиница</span>
             <span class="value">От 4000 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
@@ -210,7 +212,9 @@
               <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-2.jpg" width="300" height="212"
                 alt="Вид на скалу, изнутри которой исходит радуга.">
             </a>
-            <a class="hotel-card-title" href="#">Villas at Poco Diablo</a>
+            <h3 class="hotel-card-title">
+              <a class="hotel-card-title-link" href="#">Villas at Poco Diablo</a>
+            </h3>
             <span class="hotel-name">Гостиница</span>
             <span class="value">От 5000 &#8381; </span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
@@ -225,7 +229,9 @@
               <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-3.jpg" width="300" height="212"
                 alt="Вид на разноуровневую скалу.">
             </a>
-            <a class="hotel-card-title" href="#">Desert Quail Inn</a>
+            <h3 class="hotel-card-title">
+              <a class="hotel-card-title-link" href="#">Desert Quail Inn</a>
+            </h3>
             <span class="hotel-name">Гостиница</span>
             <span class="value">От 2500 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
@@ -240,7 +246,9 @@
               <img class="hotel-card-image" src="images/catalog/hotels-catalog/hotel-4.jpg" width="300" height="212"
                 alt="Вид на скалу на фоне звездного неба.">
             </a>
-            <a class="hotel-card-title" href="#">GreenTree Inn</a>
+            <h3 class="hotel-card-title">
+              <a class="hotel-card-title-link" href="#">GreenTree Inn</a>
+            </h3>
             <span class="hotel-name">Гостиница</span>
             <span class="value">От 1500 &#8381;</span>
             <a class="hotel-card-follow" href="#">Подробнее</a>
@@ -284,8 +292,9 @@
             </p>
           </div>
           <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
+            <span class="visually-hidden">Поле ввода адреса электронной почты</span>
             <input class="mailing-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
-            <button class="mailing-form-button" type="submit">Подписаться.</button>
+            <button class="mailing-form-button" type="submit">Подписаться</button>
           </form>
         </section>
       </div>
